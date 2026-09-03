@@ -9,7 +9,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from openai import OpenAI
 
 # Configuración
-#client = OpenAI(api_key="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")
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 ARCHIVO_MANUAL = "Manual_distribuna.docx"
 
